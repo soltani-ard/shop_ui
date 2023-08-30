@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:shop_ui/constants.dart';
+import 'package:shop_ui/models/category.dart';
+import 'package:shop_ui/screens/home/category_card.dart';
+import 'package:shop_ui/screens/home/components/categories.dart';
 import 'package:shop_ui/screens/home/components/search_form.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -49,6 +52,8 @@ class HomeScreen extends StatelessWidget {
               padding: EdgeInsets.symmetric(vertical: 8.0),
               child: SearchForm(),
             ),
+           const Categories(),
+
           ],
         ),
       ),
